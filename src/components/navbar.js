@@ -5,7 +5,7 @@ export default function Navbar({active}){
         window.history.back();
     };
     return (
-        <nav className={`min-w-full flex justify-between items-center fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200 border-b  bg-zinc-900/500  border-zinc-800 py-5 px-24`}>
+        <nav className={`min-w-full flex justify-between items-center fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200 border-b  bg-zinc-900/500  border-zinc-800 py-5 px-5 md:px-24`}>
             <div className={``} onClick={handlePop}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
