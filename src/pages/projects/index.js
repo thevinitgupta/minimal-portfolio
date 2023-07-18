@@ -17,7 +17,7 @@ export default function Projects(){
                     <Card icons={["react", "firebase"]} title="Pigshell" description="I'm building a SAAS providing global latency monitoring for your APIs and websites from edge locations around the world. Have you ever wondered how fast your API is in any part of the world? Planetfall allows you to find out and monitor it continuously." date="May, 2022" first={true}></Card>
                     <div className={`flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 `}>
                     <Card icons={["nextjs", "tailwind"]} title="Pigshell" description="I'm building a SAAS providing global latency monitoring for your APIs and websites from edge locations around the world. Have you ever wondered how fast your API is in any part of the world? Planetfall allows you to find out and monitor it continuously." date="May, 2022"></Card>
-                    <Card icons={["nodejs", "mongo", "flutter"]} title="Pigshell" description="I'm building a SAAS providing global latency monitoring for your APIs and websites from edge locations around the world. Have you ever wondered how fast your API is in any part of the world? Planetfall allows you to find out and monitor it continuously." date="May, 2022"></Card>
+                    <Card icons={["nodejs", "mongodb", "flutter"]} title="Pigshell" description="I'm building a SAAS providing global latency monitoring for your APIs and websites from edge locations around the world. Have you ever wondered how fast your API is in any part of the world? Planetfall allows you to find out and monitor it continuously." date="May, 2022"></Card>
                     </div>
                 </div>
                 <div className="w-full h-px bg-zinc-800"></div>
