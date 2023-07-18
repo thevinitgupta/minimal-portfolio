@@ -14,6 +14,7 @@ const handleArticles = async () => {
         const response = await fetch("https://dev.to/api/articles/me", requestOptions)
         const result = await response.json();
         const content = filterData(result);
+        console.log(content)
         return content;
 //             // Use remark to convert Markdown to HTML
 //   const processedContent = await remark().use(html).process(result.content);
