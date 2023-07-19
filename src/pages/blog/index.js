@@ -6,9 +6,10 @@ import Card from "@/components/card";
 // import html from 'remark-html';
 
 
-export default function Blog() {
+export default function Blog({articles}) {
     const [top1, top2,top3,...others] = articles;
     const topBlogs = [top1,top2,top3];
+    const blogs = others;
     
     return (
         <main className={`flex min-w-[100vw] flex-col items-center justify-start`}
@@ -81,8 +82,8 @@ const filterData = (articles)=>{
     return filtered;
 }
 
-export const getStaticProps = ()=>{
-    const articles = handleArticles();
+export const getStaticProps = async ()=>{
+    const articles = await handleArticles();
     return {
         props : {
             articles
