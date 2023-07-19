@@ -1,0 +1,31 @@
+{
+    "data" : [
+        {
+            "id" : "exp1",
+            "title" : "SDE Intern - Uolo",
+            "description" : "Developed API data logic for smooth JSON to structured data conversion, enhancing user experience in a Teaching and Learning app. Designed scalable UI for OTP and Ledger using Flutter and BLOC pattern, managing states and errors effectively. Resolved Web View data persistence issue using local storage, resulting in 5% higher user retention.",
+            "date" : "Apr 2023 - July 2023",
+            "url" : "",
+            "tech" : ["flutter", "nodejs", "mongodb", "analytics"],
+            "slug" : "sdeuolo"
+        },
+        {
+            "id" : "exp2",
+            "title" : "SDE Intern - Tablt",
+            "description" : "Developed API data logic for smooth JSON to structured data conversion, enhancing user experience in a Teaching and Learning app. Designed scalable UI for OTP and Ledger using Flutter and BLOC pattern, managing states and errors effectively. Resolved Web View data persistence issue using local storage, resulting in 5% higher user retention.",
+            "date" : "Aug 2021 - Feb 2022",
+            "url" : "",
+            "slug" : "sdetablt",
+            "tech" : ["vuejs", "css", "webdev"]
+        },
+        {
+            "id" : "exp3",
+            "title" : "Backend Dev Intern - Uptone",
+            "description" : "Developed API data logic for smooth JSON to structured data conversion, enhancing user experience in a Teaching and Learning app. Designed scalable UI for OTP and Ledger using Flutter and BLOC pattern, managing states and errors effectively. Resolved Web View data persistence issue using local storage, resulting in 5% higher user retention.",
+            "date" : "Apr 2021 - July 2021",
+            "url" : "",
+            "tech" : ["nodejs", "mongodb", "reactjs", "aws"],
+            "slug" : "backenduptone"
+        }
+    ]
+}
