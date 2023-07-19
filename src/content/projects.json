@@ -1,0 +1,133 @@
+{
+    "featured" : [
+        {
+            "id" : "feat1",
+            "title" : "Pigshell",
+            "description" : "Pigshell is an innovative image/video filter app powered by React, Javascript, and CSS. Experience the magic of converting images and live videos into captivating pixel-based media using Canvas functions. With user accounts and secure authentication via Firebase, Firestore, and Redux, users can seamlessly access their media from multiple devices, ensuring a personalized and connected creative experience.",
+            "tags" : ["reactjs", "firebase", "webdev"],
+            "url" : "",
+            "slug" : "pigshell",
+            "date" : "Aug 2022"
+        },
+        {
+            "id" : "feat2",
+            "title" : "MovieFling",
+            "description" : "MovieFling: A React-based app for effortless movie and TV series discovery. Access vast TMDB data with custom pages for each title. Unique feature: Find watch providers based on your country for seamless streaming.",
+            "tags" : ["reactjs", "css", "tmdb", "webdev"],
+            "url" : "",
+            "slug" : "moviefling",
+            "date" : "July 2022"
+        },
+        {
+            "id" : "feat3",
+            "title" : "Noteslify",
+            "description" : "Your Privacy-Friendly, Open Source Alternative to EverNote. Safely store notes, files, and more. Organize, back up, and share effortlessly. I contribute to this cutting-edge project!",
+            "tags" : ["nodejs","nextjs", "tailwindcss", "opensource"],
+            "url" : "",
+            "slug" : "noteslify",
+            "date" : "Feb 2023"
+        }
+    ],
+    "projects" : [
+        {
+            "id" : "proj1",
+            "title" : "HypeDB",
+            "description" : "HypeDB: A powerful NoSQL database built with NodeJS, Streams, and File Compression for high-performance data handling. Features secure fields, schema design, and NodeJS database driver.",
+            "tags" : ["nodejs","compression", "database"],
+            "url" : "",
+            "slug" : "hypedb",
+            "date" : "May 2023"
+        },
+        {
+            "id" : "proj8",
+            "title" : "Souvik Talks",
+            "description" : "Souvik Talks is a personal blogging website built as a freelancing contract. It uses ReactJS and Firebase to provide a smooth reading and writing experience with built in authentication.",
+            "tags" : ["reactjs","firebase", "css"],
+            "url" : "",
+            "slug" : "souviktalks",
+            "date" : "Aug 2021"
+        },
+        {
+            "id" : "proj2",
+            "title" : "Typr",
+            "description" : "Typr: A minimalist aproach to become better at typing, it follows a Neomorphic design to provide a real life keyboard simulation.",
+            "tags" : ["html","css", "javascript"],
+            "url" : "",
+            "slug" : "typr",
+            "date" : "March 2023"
+        },
+        {
+            "id" : "proj3",
+            "title" : "Waltz",
+            "description" : "Weatherly: A simple, yet powerful wallpaper provider Flutter app that uses the Pexels API to generate themed wallpapers",
+            "tags" : ["flutter","pexels", "appdev"],
+            "url" : "",
+            "slug" : "waltz",
+            "date" : "June 2023"
+        },
+        {
+            "id" : "proj4",
+            "title" : "Spaceslounge",
+            "description" : "An open source Lounge for Tweeters to hangout and chill. Built using NextJS and Tailwind. I have been contributing to this project.",
+            "tags" : ["nextjs","tailwindcss", "opensource"],
+            "url" : "",
+            "slug" : "spaceslounge",
+            "date" : "May 2023"
+        },
+        {
+            "id" : "proj5",
+            "title" : "Zuros",
+            "description" : "A decentralized Crypto exchange app that let's users exchange Memes 😂 and Crypto.",
+            "tags" : ["solidity","ethereum", "reactjs", "tailwindcss"],
+            "url" : "",
+            "slug" : "zuros",
+            "date" : "Jan 2023"
+        },
+        {
+            "id" : "proj6",
+            "title" : "Emoji Card Game",
+            "description" : "Emoji guessing card matching game, made using vanilla JavaScript, lots of css animations and the native HTML drag and drop API ",
+            "tags" : ["html","css", "javascript"],
+            "url" : "",
+            "slug" : "emojicardgame",
+            "date" : "Oct 2022"
+        },
+        {
+            "id" : "proj11",
+            "title" : "Pawd",
+            "description" : "A powerfull Notetaking app built using Flutter and Firebase for authentication. It has features like adding and viewing your tasks and a focus timer.",
+            "tags" : ["flutter","firebase", "appdev"],
+            "url" : "",
+            "slug" : "pawd",
+            "date" : "May 2023"
+        },
+        
+        {
+            "id" : "proj9",
+            "title" : "DSA Javascript",
+            "description" : "JavaScript based solutions for the DSA Sheet Questions by Love Babbar and Leetcode",
+            "tags" : ["javascript","leetcode"],
+            "url" : "",
+            "slug" : "dsajs",
+            "date" : "July 2021"
+        },
+        {
+            "id" : "proj10",
+            "title" : "jQuery Clone",
+            "description" : "A small jQuery clone that packs the essentials and everyday functions from the famous and obsolete jQuery library.",
+            "tags" : ["javascript","jquery", "css"],
+            "url" : "",
+            "slug" : "jquery",
+            "date" : "Jan 2021"
+        },
+        {
+            "id" : "proj7",
+            "title" : "Chatter",
+            "description" : "A simple chatting app that uses WebSockets to smoothly create rooms and chat.",
+            "tags" : ["nodejs","socketio"],
+            "url" : "",
+            "slug" : "chatter",
+            "date" : "Mar 2022"
+        }
+    ]
+}
