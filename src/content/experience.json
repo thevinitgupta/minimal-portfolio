@@ -7,7 +7,8 @@
             "date" : "Apr 2023 - July 2023",
             "url" : "",
             "tech" : ["flutter", "nodejs", "mongodb", "analytics"],
-            "slug" : "sdeuolo"
+            "slug" : "sdeuolo",
+            "img" : "uolo"
         },
         {
             "id" : "exp2",
@@ -16,7 +17,8 @@
             "date" : "Aug 2021 - Feb 2022",
             "url" : "",
             "slug" : "sdetablt",
-            "tech" : ["vuejs", "css", "webdev"]
+            "tech" : ["vuejs", "css", "webdev"],
+            "img" : "tablt"
         },
         {
             "id" : "exp3",
@@ -25,7 +27,8 @@
             "date" : "Apr 2021 - July 2021",
             "url" : "",
             "tech" : ["nodejs", "mongodb", "reactjs", "aws"],
-            "slug" : "backenduptone"
+            "slug" : "backenduptone",
+            "img" : "uptone"
         }
     ]
 }

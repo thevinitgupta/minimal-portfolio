@@ -5,7 +5,7 @@ import { FaVuejs, FaJava } from 'react-icons/fa'
 import { BsCurrencyBitcoin } from 'react-icons/bs'
 
 export default function Card(data) {
-    const {date, icons, title, description,slug, url, first=false} = data;
+    const {date, img=null, icons, title, description,slug, url, first=false} = data;
     const iconMap = {
         "reactjs" : <TbBrandReact/>,
         "react" : <TbBrandReact/>,
@@ -46,8 +46,14 @@ export default function Card(data) {
                 <div className="absolute inset-0 z-10  bg-gradient-to-br opacity-100  via-zinc-100/10  transition duration-1000 group-hover:opacity-50 " style={{ maskImage: "radial-gradient(240px at 418.5px 17px, white, transparent);" }}></div>
                 <div className="absolute inset-0 z-10 opacity-0 mix-blend-overlay transition duration-1000 group-hover:opacity-100" style={{ maskImage: "radial-gradient(240px at 418.5px 17px, white, transparent);" }}></div>
             </div>
-            <a href={url ? `${url}` : `${slug}`}>
-                <article className="p-4 md:p-8">
+            <a href={url ? `${url}` : `${slug}`} className={`h-full w-full`}>
+                <div className={`w-full h-full flex flex-col ${img ? 'items-center' : 'items-start'} justify-center gap-4 md:flex-row`}>
+                    {
+                        img && <div className={`w-full md:w-[40%] sm:min-w-[200px] flex items-center justify-center bg-white object-cover`}>
+                            <img src={`/${img}.png`} className='h-full sm:h-[200px] max-w-[200px]' alt='img'/>
+                        </div>
+                    }
+                    <article className="p-4 md:p-8">
                     <div className="flex justify-between gap-2 items-center">
                         <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
                             {date}
@@ -65,6 +71,7 @@ export default function Card(data) {
                     </p>
                     {first && <div className="absolute bottom-4 md:bottom-8"><p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">Read more <span aria-hidden="true">→</span></p></div>}
                 </article>
+                </div>
             </a>
         </div>
     );

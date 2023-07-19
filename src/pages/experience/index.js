@@ -7,7 +7,7 @@ export default function Experience({experienceJson}){
     console.log(experienceJson)
     const experiences = experienceJson.data;
     return (
-        <main className={`flex min-h-screen flex-col items-center justify-start p-24`}
+        <main className={`flex min-w-[100vw] flex-col items-center justify-start`}
         >
             <Navbar active={2}></Navbar>
             <div className={`flex flex-col w-full text-start px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-28 lg:pt-32`}>
@@ -25,9 +25,9 @@ export default function Experience({experienceJson}){
                     </div>
                 </div>
                 <div className="w-full h-px bg-zinc-800"></div> */}
-                <div className={`grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-2 lg:grid-cols-3`}>
+                <div className={`flex flex-col gap-4 mx-auto lg:mx-0`}>
                     {experiences.map((project, index)=>{
-                        return <Card key={project.id} icons={project.tech} title={project.title} slug={`/projects/${project.slug}`} description={project.description} date={project.date} ></Card>;
+                        return <Card img={project.img} key={project.id} icons={project.tech} title={project.title} slug={`/projects/${project.slug}`} description={project.description} date={project.date} ></Card>;
                     })}
                 </div>
             </div>
