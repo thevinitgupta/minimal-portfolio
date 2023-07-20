@@ -45,9 +45,15 @@ const handleArticles = async () => {
             })
         })
         const updatedData = await response2.json();
-
-        console.log('Updated File:', updatedData);
-    } catch (error) { console.error('Error fetching file:', error); }
+        const updatedContent = await JSON.parse(atob(updatedData.content));
+        return updatedContent;
+        // console.log('Updated File:', updatedData);
+    } catch (error) { 
+        console.error('Error fetching file:', error);
+        return {
+            error
+        }
+    }
 
 };
 
@@ -55,10 +61,12 @@ const handleArticles = async () => {
 export default async function handler(req, res) {
     try {
         const result = await handleArticles()
+        if(result.error) throw Error(result.error);
         res.status(200).send({
-            message : "Updated Successfully"
+            message : "Updated Successfully",
+            content : result
         });
     } catch (err) {
-        res.status(500).send({ error: 'Failed to update' })
+        res.status(500).send({ error: 'Failed to update', err });
     }
 }
