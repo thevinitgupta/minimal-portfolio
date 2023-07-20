@@ -10,7 +10,7 @@ export default function Home() {
     try {
       const resp = await fetch("/api/articles");
       const data = await resp.json();
-      console.log(data);
+      console.log(data.message);
     } catch (error) {
       console.log(error)
     }

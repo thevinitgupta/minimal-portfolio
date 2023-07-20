@@ -18,12 +18,13 @@ const handleArticles = async () => {
             }
         })
         const data1 = await response1.json();
+        console.log(data1)
         const fileContent = await JSON.parse(atob(data1.content));
         const prevCount = fileContent.count;
         console.log(fileContent.count);
         const sha = data1.sha;
 
-        const content = JSON.stringify({ count: prevCount+1 });
+        const content = JSON.stringify({count:prevCount+1});
 
         console.log('Existing SHA:', sha);
 
@@ -45,8 +46,9 @@ const handleArticles = async () => {
             })
         })
         const updatedData = await response2.json();
-        const updatedContent = await JSON.parse(atob(updatedData.content));
-        return updatedContent;
+        // const updatedContent = await JSON.parse(updatedData);
+        // console.log(updatedData);
+        return updatedData;
         // console.log('Updated File:', updatedData);
     } catch (error) { 
         console.error('Error fetching file:', error);
@@ -64,7 +66,6 @@ export default async function handler(req, res) {
         if(result.error) throw Error(result.error);
         res.status(200).send({
             message : "Updated Successfully",
-            content : result
         });
     } catch (err) {
         res.status(500).send({ error: 'Failed to update', err });
