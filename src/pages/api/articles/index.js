@@ -62,7 +62,7 @@ const handleArticles = async () => {
 
 export default async function handler(req, res) {
     try {
-        const result = await handleArticles()
+        const result = await (await handleArticles()).json();
         if(result.error) throw Error(result.error);
         res.status(200).send({
             message : "Updated Successfully",

@@ -30,10 +30,10 @@ export default function Home() {
       className={`flex min-h-screen min-w-[100vw] flex-col items-center justify-center px-4 md:px-20 lg:px-24  py-10 lg:py-24`}
       >
         <section className={`w-full h-auto mb-10 flex items-center justify-center gap-8 text-sm md:text-md lg:text-[1.5rem] font-Mono text-gray-500`}>
-          <Link onClick={handleVisit} href={`/projects`} className={`hover:text-gray-300 cursor-pointer`}>Projects</Link>
-          <Link onClick={handleVisit} href={`/experience`} className={`hover:text-gray-300 cursor-pointer`}>Experience</Link>
-          <Link onClick={handleVisit} href={`/blog`} className={`hover:text-gray-300 cursor-pointer`}>Blog</Link>
-          <Link onClick={handleVisit} href={`/contact`} className={`hover:text-gray-300 cursor-pointer`}>Contact</Link>
+          <Link href={`/projects`} className={`hover:text-gray-300 cursor-pointer`}>Projects</Link>
+          <Link href={`/experience`} className={`hover:text-gray-300 cursor-pointer`}>Experience</Link>
+          <Link href={`/blog`} className={`hover:text-gray-300 cursor-pointer`}>Blog</Link>
+          <Link href={`/contact`} className={`hover:text-gray-300 cursor-pointer`}>Contact</Link>
         </section>
       <section className={`w-full h-auto my-5 text-[2rem] md:text-[4rem] lg:text-[6rem] text-white text-center font-Audiowide`}>
         thevinitgupta
