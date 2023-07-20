@@ -8,9 +8,14 @@ export default function Home() {
   return (
     <div>
      <Head>
-        <title>Vinit Gupta Portfolio</title>
-        <meta name='description' content='Vinit Gupta - Software Developer experience in ReactJS, MongoDB, NodeJS, NextJS'></meta>
-      </Head> 
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+    <title>Vinit Gupta - Software Developer | Portfolio</title>
+    <meta name='description' content='Vinit Gupta is a skilled Software Developer with expertise in ReactJS, MongoDB, NodeJS, and NextJS. Check out his portfolio for projects and experience.'></meta>
+    <meta name='keywords' content='Vinit Gupta, Software Developer, ReactJS, MongoDB, NodeJS, NextJS, Portfolio, Projects, Experience'></meta>
+    <meta name='author' content='Vinit Gupta'></meta>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'></meta>
+</Head>
+
     <main
       className={`flex min-h-screen min-w-[100vw] flex-col items-center justify-center px-4 md:px-20 lg:px-24  py-10 lg:py-24`}
       >
