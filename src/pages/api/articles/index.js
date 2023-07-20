@@ -68,6 +68,6 @@ export default async function handler(req, res) {
             message : "Updated Successfully",
         });
     } catch (err) {
-        res.status(500).send({ error: 'Failed to update', err });
+        res.status(500).send({ message: 'Failed to update', err });
     }
 }
