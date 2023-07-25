@@ -27,7 +27,7 @@ export default function Home() {
 </Head>
 
     <main
-      className={`flex min-h-screen min-w-[100vw] flex-col items-center justify-center px-4 md:px-20 lg:px-24  py-10 lg:py-24`}
+      className={`flex min-h-screen max-w-[100vw] flex-col items-center justify-center px-4 md:px-20 lg:px-24  py-10 lg:py-24`}
       >
         <section className={`w-full h-auto mb-10 flex items-center justify-center gap-8 text-sm md:text-md lg:text-[1.5rem] font-Mono text-gray-500`}>
           <Link href={`/projects`} className={`hover:text-gray-300 cursor-pointer`}>Projects</Link>
