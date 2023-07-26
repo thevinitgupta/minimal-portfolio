@@ -7,7 +7,7 @@ export default function Projects({projectJson}){
     const featured = projectJson.featured;
     const projects = projectJson.projects;
     return (
-        <main className={`flex min-w-[100vw] flex-col items-center justify-start`}
+        <main className={`flex max-w-[100vw] flex-col items-center justify-start`}
         >
             <Navbar active={1}></Navbar>
             

@@ -3,7 +3,7 @@ import {SlSocialLinkedin} from "react-icons/sl"
 
 export default function Contact() {
     return (
-        <main className={`flex min-h-screen min-w-screen flex-col items-center justify-start p-10 sm:p-24`}
+        <main className={`flex min-h-screen max-w-screen flex-col items-center justify-start p-10 sm:p-24`}
         >
             <Navbar active={4}>   </Navbar>
             <div className={`flex-1 w-full flex justify-center items-center`}>

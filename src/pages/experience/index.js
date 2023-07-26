@@ -7,7 +7,7 @@ export default function Experience({experienceJson}){
     console.log(experienceJson)
     const experiences = experienceJson.data;
     return (
-        <main className={`flex min-w-[100vw] flex-col items-center justify-start`}
+        <main className={`flex max-w-[100vw] flex-col items-center justify-start`}
         >
             <Navbar active={2}></Navbar>
             <div className={`flex flex-col w-full text-start px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-28 lg:pt-32`}>
