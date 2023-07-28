@@ -38,6 +38,7 @@ export default function Projects({projectJson}){
 }
 
 export const getStaticProps = ()=>{
+    
     console.log(projectJson);
     return {
         props : {

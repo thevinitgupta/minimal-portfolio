@@ -6,7 +6,7 @@
             "description" : "Pigshell is an innovative image/video filter app powered by React, Javascript, and CSS. Experience the magic of converting images and live videos into captivating pixel-based media using Canvas functions. With user accounts and secure authentication via Firebase, Firestore, and Redux, users can seamlessly access their media from multiple devices, ensuring a personalized and connected creative experience.",
             "tags" : ["reactjs", "firebase", "webdev"],
             "url" : "",
-            "slug" : "pigshell",
+            "slug" : "Pigshell",
             "date" : "Aug 2022"
         },
         {
@@ -15,7 +15,7 @@
             "description" : "MovieFling: A React-based app for effortless movie and TV series discovery. Access vast TMDB data with custom pages for each title. Unique feature: Find watch providers based on your country for seamless streaming.",
             "tags" : ["reactjs", "css", "tmdb", "webdev"],
             "url" : "",
-            "slug" : "moviefling",
+            "slug" : "MovieFling",
             "date" : "July 2022"
         },
         {
