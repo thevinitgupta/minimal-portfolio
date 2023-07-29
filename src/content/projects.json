@@ -6,7 +6,7 @@
             "description" : "Pigshell is an innovative image/video filter app powered by React, Javascript, and CSS. Experience the magic of converting images and live videos into captivating pixel-based media using Canvas functions. With user accounts and secure authentication via Firebase, Firestore, and Redux, users can seamlessly access their media from multiple devices, ensuring a personalized and connected creative experience.",
             "tags" : ["reactjs", "firebase", "webdev"],
             "url" : "",
-            "slug" : "Pigshell",
+            "slug" : "Pig-Shell",
             "date" : "Aug 2022"
         },
         {
@@ -35,7 +35,7 @@
             "description" : "HypeDB: A powerful NoSQL database built with NodeJS, Streams, and File Compression for high-performance data handling. Features secure fields, schema design, and NodeJS database driver.",
             "tags" : ["nodejs","compression", "database"],
             "url" : "",
-            "slug" : "hypedb",
+            "slug" : "HypeDB",
             "date" : "May 2023"
         },
         {
@@ -44,7 +44,7 @@
             "description" : "Souvik Talks is a personal blogging website built as a freelancing contract. It uses ReactJS and Firebase to provide a smooth reading and writing experience with built in authentication.",
             "tags" : ["reactjs","firebase", "css"],
             "url" : "",
-            "slug" : "souviktalks",
+            "slug" : "souvik-talks",
             "date" : "Aug 2021"
         },
         {
@@ -53,7 +53,7 @@
             "description" : "Typr: A minimalist aproach to become better at typing, it follows a Neomorphic design to provide a real life keyboard simulation.",
             "tags" : ["html","css", "javascript"],
             "url" : "",
-            "slug" : "typr",
+            "slug" : "Typr",
             "date" : "March 2023"
         },
         {
@@ -62,7 +62,7 @@
             "description" : "Weatherly: A simple, yet powerful wallpaper provider Flutter app that uses the Pexels API to generate themed wallpapers",
             "tags" : ["flutter","pexels", "appdev"],
             "url" : "",
-            "slug" : "waltz",
+            "slug" : "Waltz",
             "date" : "June 2023"
         },
         {
@@ -80,7 +80,7 @@
             "description" : "A decentralized Crypto exchange app that let's users exchange Memes 😂 and Crypto.",
             "tags" : ["solidity","ethereum", "reactjs", "tailwindcss"],
             "url" : "",
-            "slug" : "zuros",
+            "slug" : "Zuros",
             "date" : "Jan 2023"
         },
         {
@@ -89,7 +89,7 @@
             "description" : "Emoji guessing card matching game, made using vanilla JavaScript, lots of css animations and the native HTML drag and drop API ",
             "tags" : ["html","css", "javascript"],
             "url" : "",
-            "slug" : "emojicardgame",
+            "slug" : "Emoji-Card-Game",
             "date" : "Oct 2022"
         },
         {
@@ -98,7 +98,7 @@
             "description" : "A powerfull Notetaking app built using Flutter and Firebase for authentication. It has features like adding and viewing your tasks and a focus timer.",
             "tags" : ["flutter","firebase", "appdev"],
             "url" : "",
-            "slug" : "pawd",
+            "slug" : "Pawd",
             "date" : "May 2023"
         },
         
@@ -108,7 +108,7 @@
             "description" : "JavaScript based solutions for the DSA Sheet Questions by Love Babbar and Leetcode",
             "tags" : ["javascript","leetcode"],
             "url" : "",
-            "slug" : "dsajs",
+            "slug" : "DSA-Javascript",
             "date" : "July 2021"
         },
         {
@@ -117,7 +117,7 @@
             "description" : "A small jQuery clone that packs the essentials and everyday functions from the famous and obsolete jQuery library.",
             "tags" : ["javascript","jquery", "css"],
             "url" : "",
-            "slug" : "jquery",
+            "slug" : "jQuery-clone",
             "date" : "Jan 2021"
         },
         {
@@ -126,7 +126,7 @@
             "description" : "A simple chatting app that uses WebSockets to smoothly create rooms and chat.",
             "tags" : ["nodejs","socketio"],
             "url" : "",
-            "slug" : "chatter",
+            "slug" : "Chatter",
             "date" : "Mar 2022"
         }
     ]
