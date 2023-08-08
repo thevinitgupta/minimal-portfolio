@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 
 
 export default function Home() {
+  const router = useRouter()
 
   const handleVisit = async ()=>{
     try {
@@ -14,6 +16,10 @@ export default function Home() {
     } catch (error) {
       console.log(error)
     }
+  }
+  const redirect = (e) => {
+    e.preventDefault()
+    router.push("/100DaysofLearning")
   }
   return (
     <div>
@@ -39,8 +45,10 @@ export default function Home() {
         thevinitgupta
       </section>
       <section className={`w-full lg:w-[50%] h-auto mt-10 flex items-center justify-center text-center text-sm lg:text-[1.15rem] font-Body text-gray-500`}>
-        {`Hi there, I am currently building full stack projects, contributing to open source and documenting my journey on my blogs.`}
+        <p>Hi there, I am currently building full stack projects, contributing to open source and documenting my journey on my blogs. <br/>
+        <span className={`text-gray-50 cursor-pointer font-Mono`} onClick={redirect}>👉 100 Days of Learning challenge 👈</span></p>
       </section>
+      
     </main>
     </div>
   )
