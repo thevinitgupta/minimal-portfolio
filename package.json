@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@octokit/core": "^5.0.0",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "10.4.14",
     "gray-matter": "^4.0.3",
