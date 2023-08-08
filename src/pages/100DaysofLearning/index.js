@@ -5,10 +5,6 @@ import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 import { Octokit } from "@octokit/core";
 
-// import remark from 'remark';
-// import html from 'remark-html';
-
-
 export default function DaysOfLearning({ project }) {
 
     return (
@@ -27,8 +23,6 @@ export default function DaysOfLearning({ project }) {
 const fetchPost = async (project) => {
     var myHeaders = new Headers();
     const accessToken = process.env.GITHUB_ACCESS_TOKEN;
-
-
     try {
 
         const octokit = new Octokit({
@@ -45,12 +39,9 @@ const fetchPost = async (project) => {
         })
         const base64Content = resp.data.content;
         const decodedContent = Buffer.from(base64Content, 'base64').toString('utf-8');
-        // console.log(decodedContent);
         let mdxSource = "";
-        // if (body !== "404: Not Found") {
         mdxSource = await serialize(decodedContent);
-        // }
-        // console.log("body : ", "404: Not Found" === body)
+
         return mdxSource;
     }
     catch (error) {
