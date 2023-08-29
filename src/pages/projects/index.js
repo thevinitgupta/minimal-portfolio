@@ -11,13 +11,13 @@ export default function Projects({projectJson}){
         >
             <Navbar active={1}></Navbar>
             
-            <div className={`flex flex-col w-full text-start px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-28 lg:pt-32`}>
+            <div className={`flex flex-col w-full text-start px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-28 lg:pt-32 z-5`}>
                 <div className={`max-w-2xl mx-0`}>
                     <h2 className={`text-3xl font-bold tracking-tight text-zinc-100 sm:text-[2.5rem]`}>Projects</h2>
                     <p className={`mt-4 text-zinc-400`}>Some of the projects I have done in my free time and contributed to.</p>
                 </div>
-                <div className="w-full h-px bg-zinc-800"></div>
-                <div className={`grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 `}>
+                <div className="w-full h-px bg-zinc-800 z-5"></div>
+                <div className={`grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2  z-5`}>
                     <Card icons={featured[0].tags} title={featured[0].title} slug={`/projects/${featured[0].slug}`}  description={featured[0].description} date={featured[0].date} first={true}></Card>
                     <div className={`flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 `}>
                     {
@@ -25,8 +25,8 @@ export default function Projects({projectJson}){
                     }
                     </div>
                 </div>
-                <div className="w-full h-px bg-zinc-800"></div>
-                <div className={`grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-2 lg:grid-cols-3`}>
+                <div className="w-full h-px bg-zinc-800 z-5"></div>
+                <div className={`grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-2 lg:grid-cols-3 z-5`}>
                     {projects.map((project, index)=>{
                         return <Card key={project.id} icons={project.tags} title={project.title} slug={`/projects/${project.slug}`} description={project.description} date={project.date} ></Card>;
                     })}

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Blob from '@/components/blob'
 
 
 
@@ -17,10 +18,13 @@ export default function Home() {
       console.log(error)
     }
   }
+
+
   const redirect = (e) => {
     e.preventDefault()
     router.push("/100DaysofLearning")
   }
+
   return (
     <div>
      <Head>
@@ -31,20 +35,20 @@ export default function Home() {
     <meta name='author' content='Vinit Gupta'></meta>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'></meta>
 </Head>
-
     <main
-      className={`flex min-h-screen max-w-[100vw] flex-col items-center justify-center px-4 md:px-20 lg:px-24  py-10 lg:py-24`}
+      className={`flex min-h-screen max-w-[100vw] flex-col items-center justify-center px-4 md:px-20 lg:px-24  py-10 lg:py-24 relative`}
       >
-        <section className={`w-full h-auto mb-10 flex items-center justify-center gap-8 text-sm md:text-md lg:text-[1.5rem] font-Mono text-gray-500`}>
+      
+        <section className={`w-full h-auto mb-10 flex items-center justify-center gap-8 text-sm md:text-md lg:text-[1.5rem] font-Mono text-gray-500 z-5`}>
           <Link href={`/projects`} className={`hover:text-gray-300 cursor-pointer`}>Projects</Link>
           <Link href={`/experience`} className={`hover:text-gray-300 cursor-pointer`}>Experience</Link>
           <Link href={`/blog`} className={`hover:text-gray-300 cursor-pointer`}>Blog</Link>
           <Link href={`/contact`} className={`hover:text-gray-300 cursor-pointer`}>Contact</Link>
         </section>
-      <section className={`w-full h-auto my-5 text-[2rem] md:text-[4rem] lg:text-[6rem] text-white text-center font-Audiowide`}>
+      <section className={`w-full h-auto my-5 text-[2rem] md:text-[4rem] lg:text-[6rem] text-white text-center font-Audiowide z-5`}>
         thevinitgupta
       </section>
-      <section className={`w-full lg:w-[50%] h-auto mt-10 flex items-center justify-center text-center text-sm lg:text-[1.15rem] font-Body text-gray-500`}>
+      <section className={`w-full lg:w-[50%] h-auto mt-10 flex items-center justify-center text-center text-sm lg:text-[1.15rem] font-Body text-gray-500 z-5`}>
         <p>Hi there, I am currently building full stack projects, contributing to open source and documenting my journey on my blogs. <br/>
         <span className={`text-gray-50 cursor-pointer font-Mono`} onClick={redirect}>👉 100 Days of Learning challenge 👈</span></p>
       </section>
