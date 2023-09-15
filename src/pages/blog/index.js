@@ -24,16 +24,16 @@ export default function Blog({articles}) {
                 </div>
                 <div className="w-full h-px bg-zinc-800"></div>
                 <div className={`grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 `}>
-                     <Card key={topBlogs[0].id} icons={topBlogs[0].tag_list} title={topBlogs[0].title} description={topBlogs[0].description} date={topBlogs[0].published_at} first={true} url={`/blog/${topBlogs[0].id}`}></Card>
+                     <Card key={topBlogs[0].id} icons={topBlogs[0].tag_list} title={topBlogs[0].title} description={topBlogs[0].description} views={topBlogs[0].page_views_count} date={topBlogs[0].published_at} first={true} url={`/blog/${topBlogs[0].id}`}></Card>
                     <div className={`flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 `}>
-                    {[topBlogs[1], topBlogs[2]].map((blog)=> <Card key={blog.id} icons={blog.tag_list} title={blog.title} description={blog.description} date={blog.published_at} url={`/blog/${blog.id}`}></Card>)}
+                    {[topBlogs[1], topBlogs[2]].map((blog)=> <Card key={blog.id} icons={blog.tag_list} title={blog.title} views={blog.page_views_count} description={blog.description} date={blog.published_at} url={`/blog/${blog.id}`}></Card>)}
                     </div>
                 </div>
                 <div className="w-full h-px bg-zinc-800"></div>
                 <div className={`grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-2 lg:grid-cols-3`}>
                     {
                     blogs.map((blog, index)=>{
-                        return <Card key={blog.id} icons={blog.tag_list} title={blog.title} description={blog.description} date={blog.published_at} url={`/blog/${blog.id}`}></Card>
+                        return <Card key={blog.id} icons={blog.tag_list} views={blog.page_views_count} title={blog.title} description={blog.description} date={blog.published_at} url={`/blog/${blog.id}`}></Card>
                     })
                     }
                 </div>
@@ -57,8 +57,9 @@ const handleArticles = async () => {
     try {
         const response = await fetch("https://dev.to/api/articles/me", requestOptions)
         const result = await response.json();
+        console.log("Blog result json ", result);
         const content = filterData(result);
-        console.log(content)
+        // console.log(content)
         return content;
 //             // Use remark to convert Markdown to HTML
 //   const processedContent = await remark().use(html).process(result.content);

@@ -3,9 +3,10 @@ import { IoLogoNodejs } from 'react-icons/io'
 import { SiSolidity, SiEthereum, SiLeetcode, SiPexels, SiThemoviedatabase } from 'react-icons/si'
 import { FaVuejs, FaJava } from 'react-icons/fa'
 import { BsCurrencyBitcoin } from 'react-icons/bs'
+import { AiOutlineEye } from 'react-icons/ai'
 
 export default function Card(data) {
-    const {date, img=null, icons, title, description,slug, url, first=false} = data;
+    const {date, img=null, icons, title, description,slug, url, first=false, views=null} = data;
     const iconMap = {
         "reactjs" : <TbBrandReact/>,
         "react" : <TbBrandReact/>,
@@ -69,7 +70,15 @@ export default function Card(data) {
                     <p className={`z-20 mt-4 ${first ? "text-lg" : "text-sm"}  duration-1000 text-zinc-400 group-hover:text-zinc-200`}>
                         {description}
                     </p>
-                    {first && <div className="absolute bottom-4 md:bottom-8"><p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">Read more <span aria-hidden="true">→</span></p></div>}
+                    <div className={`${first?"w-[90%]" : "w-full"} flex justify-between items-center ${first ? "absolute bottom-4" : ""}`}>
+                    {first && <span className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
+                           Read more <span aria-hidden="true">→</span></span>
+                        }
+                        {views && <div className={`flex flex-1 justify-end items-center gap-2 text-zinc-500`}>
+                        <AiOutlineEye/>
+                        {views}
+                        </div>}
+                    </div>
                 </article>
                 </div>
             </a>
