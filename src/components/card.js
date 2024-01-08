@@ -1,7 +1,7 @@
 import { TbBrandReact,TbDatabase, TbApi, TbDeviceMobileCode, TbBrandJavascript, TbDeviceDesktopCode, TbBrandHtml5, TbBrandCss3, TbBrandGithub, TbBrandGraphql, TbBrandFirebase, TbBrandMongodb, TbBrandFlutter, TbBrandNextjs, TbBrandTailwind } from 'react-icons/tb'
 import { IoLogoNodejs } from 'react-icons/io'
-import { SiSolidity, SiEthereum, SiLeetcode, SiPexels, SiThemoviedatabase } from 'react-icons/si'
-import { FaVuejs, FaJava } from 'react-icons/fa'
+import { SiSolidity, SiEthereum, SiLeetcode, SiPexels, SiThemoviedatabase, SiAppwrite } from 'react-icons/si'
+import { FaVuejs, FaJava, FaChartLine } from 'react-icons/fa'
 import { BsCurrencyBitcoin } from 'react-icons/bs'
 import { AiOutlineEye } from 'react-icons/ai'
 
@@ -10,7 +10,9 @@ export default function Card(data) {
     const iconMap = {
         "reactjs" : <TbBrandReact/>,
         "react" : <TbBrandReact/>,
+        "charts" : <FaChartLine/>,
         "firebase" : <TbBrandFirebase/>,
+        "appwrite" : <SiAppwrite/>,
         "mongodb" : <TbBrandMongodb/>,
         "flutter" : <TbBrandFlutter/>,
         "api" : <TbApi/>,
