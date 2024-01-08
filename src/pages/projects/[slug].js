@@ -27,7 +27,7 @@ export default function Project({ project }) {
 const fetchPost = async (project) => {
     var myHeaders = new Headers();
     var branch = "main";
-    const apiKey = process.env.DEVTO_API_KEY;
+    const apiKey = process.env.GITHUB_ACCESS_TOKEN;
     myHeaders.append("api-key", apiKey);
 
     var requestOptions = {
@@ -43,6 +43,7 @@ const fetchPost = async (project) => {
         const body = await response.text();
         let mdxSource = "";
         if(body!=="404: Not Found"){
+            console.log(body)
             mdxSource = await serialize(body);
         }
         console.log("body : ", "404: Not Found"===body)
