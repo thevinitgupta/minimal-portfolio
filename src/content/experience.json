@@ -2,6 +2,16 @@
     "data" : [
         {
             "id" : "exp1",
+            "title" : "Software Developer - TCS",
+            "description" : "Working on a large scale application developed using Java Spring Boot and MySQL. Handling data using PLSQL. Completed training creating Full Stack Web Application using Java, with added security features.",
+            "date" : "Oct 2023 - Present",
+            "url" : "",
+            "tech" : ["java", "mysql", "springboot"],
+            "slug" : "sdetcs",
+            "img" : "tcs"
+        },
+        {
+            "id" : "exp2",
             "title" : "SDE Intern - Uolo",
             "description" : "Developed API data logic for smooth JSON to structured data conversion, enhancing user experience in a Teaching and Learning app. Designed scalable UI for OTP and Ledger using Flutter and BLOC pattern, managing states and errors effectively. Resolved Web View data persistence issue using local storage, resulting in 5% higher user retention.",
             "date" : "Apr 2023 - July 2023",
@@ -11,7 +21,7 @@
             "img" : "uolo"
         },
         {
-            "id" : "exp2",
+            "id" : "exp3",
             "title" : "SDE Intern - Tablt",
             "description" : "Developed API data logic for smooth JSON to structured data conversion, enhancing user experience in a Teaching and Learning app. Designed scalable UI for OTP and Ledger using Flutter and BLOC pattern, managing states and errors effectively. Resolved Web View data persistence issue using local storage, resulting in 5% higher user retention.",
             "date" : "Aug 2021 - Feb 2022",
@@ -21,7 +31,7 @@
             "img" : "tablt"
         },
         {
-            "id" : "exp3",
+            "id" : "exp4",
             "title" : "Backend Dev Intern - Uptone",
             "description" : "Developed API data logic for smooth JSON to structured data conversion, enhancing user experience in a Teaching and Learning app. Designed scalable UI for OTP and Ledger using Flutter and BLOC pattern, managing states and errors effectively. Resolved Web View data persistence issue using local storage, resulting in 5% higher user retention.",
             "date" : "Apr 2021 - July 2021",
