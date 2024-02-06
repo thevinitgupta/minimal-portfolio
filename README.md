@@ -1,10 +1,10 @@
 # Portfolio
 
-[ ] - Add Resume download button
+✅ - **Add Resume download button**
 
-[ ] - Automate weekly deploys on Netlify
+[ ] - _Automate weekly deploys on Netlify_
 
-[ ] - Change pages to Statically Generated for better user experience
+ [ ] - _Change pages to Statically Generated for better user experience_
 
 ## Created using 🛠️
 - ### NextJS

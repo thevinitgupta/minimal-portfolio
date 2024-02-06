@@ -20,6 +20,21 @@ export default function Home() {
     }
   };
 
+  const handleResume = async () => {
+    const response = await fetch('/api/files');
+
+    if (response.status !== 200) {
+      console.error(response.status, response.statusText);
+    }
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Vinit_Gupta_Resume.pdf';
+    link.click();
+  }
+
   const redirect = (e) => {
     e.preventDefault();
     router.push("/100DaysofLearning");
@@ -69,6 +84,9 @@ export default function Home() {
       <main
         className={`flex min-h-screen max-w-[100vw] flex-col items-center justify-center px-4 md:px-20 lg:px-24  py-10 lg:py-24 relative`}
       >
+        <div onClick={handleResume} className={`absolute w-16 md:w-24 aspect-square object-contain bottom-10 right-6 bg-transparent cursor-pointer text-white hover:scale-110 animate-spin-slow hover:animate-spin-slower`}>
+          <img src="/hire.png" alt="hire me" className={`h-full`}/>
+        </div>
         <section
           className={`w-full h-auto mb-10 flex items-center justify-center gap-8 text-sm md:text-md lg:text-[1.5rem] font-Mono text-gray-500 z-5`}
         >

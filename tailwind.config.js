@@ -17,6 +17,10 @@ module.exports = {
         Mono: ["Syne Mono", "monospace"],
         Audiowide: ["Audiowide", "cursive"],
        },
+       animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'spin-slower': 'spin 4s linear infinite',
+      }
     },
   },
   plugins: [
