@@ -51,7 +51,7 @@ const fetchPost = async (project) => {
 }
 
 
-export const getServerSideProps = async (context) => {
+export const getStaticProps = async (context) => {
 
     const project = await fetchPost("100-Days-of-Learning");
     return {
