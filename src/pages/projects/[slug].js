@@ -56,7 +56,7 @@ const fetchPost = async (project) => {
 }
 
 export const getStaticPaths = () => {
-    return { paths: [], fallback: true }
+    return { paths: [], fallback: 'blocking' }
 }
 
 export const getStaticProps = async (context) => {

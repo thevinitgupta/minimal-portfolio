@@ -4,11 +4,15 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Blob from "@/components/blob";
 import { useRef } from "react";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
+import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const headRef = useRef();
+  // const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+  // console.log(API_KEY)
 
   const handleVisit = async () => {
     try {
@@ -21,6 +25,7 @@ export default function Home() {
   };
 
   const handleResume = async () => {
+    // setIsOpen(true);
     const response = await fetch('/api/files');
 
     if (response.status !== 200) {
@@ -87,6 +92,7 @@ export default function Home() {
         <div onClick={handleResume} className={`absolute w-16 md:w-24 aspect-square object-contain bottom-10 right-6 bg-transparent cursor-pointer text-white hover:scale-110 animate-spin-slow hover:animate-spin-slower`}>
           <img src="/hire.png" alt="hire me" className={`h-full`}/>
         </div>
+        {/* {isOpen && <Chatbot setIsOpen={setIsOpen} geminiApiKey={API_KEY}/>} */}
         <section
           className={`w-full h-auto mb-10 flex items-center justify-center gap-8 text-sm md:text-md lg:text-[1.5rem] font-Mono text-gray-500 z-5`}
         >
