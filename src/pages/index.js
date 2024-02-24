@@ -11,7 +11,7 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const headRef = useRef();
-  // const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+  const GEMINI_API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
   // console.log(API_KEY)
 
   const handleVisit = async () => {
@@ -24,20 +24,25 @@ export default function Home() {
     }
   };
 
+  const toggleChat = () => {
+    console.log('toggleChat')
+    setIsOpen(!isOpen)
+  }
+
   const handleResume = async () => {
-    // setIsOpen(true);
-    const response = await fetch('/api/files');
+    toggleChat();
+    // const response = await fetch('/api/files');
 
-    if (response.status !== 200) {
-      console.error(response.status, response.statusText);
-    }
+    // if (response.status !== 200) {
+    //   console.error(response.status, response.statusText);
+    // }
 
-    const blob = await response.blob();
-    const url = window.URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Vinit_Gupta_Resume.pdf';
-    link.click();
+    // const blob = await response.blob();
+    // const url = window.URL.createObjectURL(blob);
+    // const link = document.createElement('a');
+    // link.href = url;
+    // link.download = 'Vinit_Gupta_Resume.pdf';
+    // link.click();
   }
 
   const redirect = (e) => {
@@ -92,7 +97,7 @@ export default function Home() {
         <div onClick={handleResume} className={`absolute w-16 md:w-24 aspect-square object-contain bottom-10 right-6 bg-transparent cursor-pointer text-white hover:scale-110 animate-spin-slow hover:animate-spin-slower`}>
           <img src="/hire.png" alt="hire me" className={`h-full`}/>
         </div>
-        {/* {isOpen && <Chatbot setIsOpen={setIsOpen} geminiApiKey={API_KEY}/>} */}
+        {isOpen ? <Chatbot toggleChat={toggleChat} geminiApiKey={GEMINI_API_KEY}/> : null}
         <section
           className={`w-full h-auto mb-10 flex items-center justify-center gap-8 text-sm md:text-md lg:text-[1.5rem] font-Mono text-gray-500 z-5`}
         >

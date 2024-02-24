@@ -51,7 +51,7 @@ const fetchPost = async (postId)=>{
   }
 }
 
-export const getStaticPaths = (context)=>{
+export const getStaticPaths = ()=>{
   return{ paths: [], fallback: 'blocking' }
 }
 
