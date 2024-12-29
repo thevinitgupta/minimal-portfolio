@@ -1,4 +1,4 @@
-import { TbBrandReact,TbDatabase, TbApi, TbDeviceMobileCode, TbBrandJavascript, TbDeviceDesktopCode, TbBrandHtml5, TbBrandCss3, TbBrandGithub, TbBrandGraphql, TbBrandFirebase, TbBrandMongodb, TbBrandFlutter, TbBrandNextjs, TbBrandTailwind, TbSql } from 'react-icons/tb'
+import { TbBrandReact,TbDatabase, TbApi, TbDeviceMobileCode, TbBrandJavascript, TbDeviceDesktopCode, TbBrandHtml5, TbBrandCss3, TbBrandGithub, TbBrandGraphql, TbBrandFirebase, TbBrandMongodb, TbBrandFlutter, TbBrandNextjs, TbBrandTailwind } from 'react-icons/tb'
 import { IoLogoNodejs } from 'react-icons/io'
 import { SiSolidity, SiEthereum, SiLeetcode, SiPexels, SiThemoviedatabase, SiAppwrite, SiSpringboot } from 'react-icons/si'
 import { FaVuejs, FaJava, FaChartLine } from 'react-icons/fa'
@@ -42,7 +42,7 @@ export default function Card(data) {
         "pexels" : <SiPexels/>,
         "tmdb" : <SiThemoviedatabase/>,
         "springboot" : <SiSpringboot/>,
-        "oraclesql" : <TbSql/>,
+        "oraclesql" : <SiSpringboot/>,
 
     };
     return (

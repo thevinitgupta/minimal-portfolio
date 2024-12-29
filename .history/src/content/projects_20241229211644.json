@@ -32,7 +32,7 @@
     "projects" : [
         
         {
-            "id" : "proj1",
+            "id" : "proj12",
             "title" : "MovieFling",
             "description" : "MovieFling: A React-based app for effortless movie and TV series discovery. Access vast TMDB data with custom pages for each title. Unique feature: Find watch providers based on your country for seamless streaming.",
             "tags" : ["reactjs", "css", "tmdb", "webdev"],

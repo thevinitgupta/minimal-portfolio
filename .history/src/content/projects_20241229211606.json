@@ -7,7 +7,7 @@
             "tags" : ["nextjs", "springboot", "mongodb", "tailwindcss", "opensource"],
             "url" : "",
             "slug" : "biblio",
-            "date" : "Work in progress"
+            "date" : "Feb 2023"
         },
         {
             "id" : "feat2",
@@ -30,9 +30,17 @@
         
     ],
     "projects" : [
-        
         {
             "id" : "proj1",
+            "title" : "HypeDB",
+            "description" : "HypeDB: A powerful NoSQL database built with NodeJS, Streams, and File Compression for high-performance data handling. Features secure fields, schema design, and NodeJS database driver.",
+            "tags" : ["nodejs","compression", "database"],
+            "url" : "",
+            "slug" : "HypeDB",
+            "date" : "May 2023"
+        },
+        {
+            "id" : "proj12",
             "title" : "MovieFling",
             "description" : "MovieFling: A React-based app for effortless movie and TV series discovery. Access vast TMDB data with custom pages for each title. Unique feature: Find watch providers based on your country for seamless streaming.",
             "tags" : ["reactjs", "css", "tmdb", "webdev"],

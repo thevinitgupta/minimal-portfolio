@@ -123,7 +123,7 @@ export default function Home() {
             Contact
           </Link>
           <Link
-            href={`https://ggl.link/vg_resume`} target="_blank"
+            href={`https://ggl.link/vg_resume`} t
             className={`hover:text-gray-300 cursor-pointer`}
           >
             Resume
@@ -139,7 +139,8 @@ export default function Home() {
           className={`w-full lg:w-[50%] h-auto mt-10 flex items-center justify-center text-center text-sm lg:text-[1.15rem] font-Body text-gray-500 z-5`}
         >
           <p>
-            Hi there, I am currently working full time for 1 year+, building products optimized for large user-base and documenting my journey on my blogs. <br />
+            Hi there, I am currently building full stack projects, contributing
+            to open source and documenting my journey on my blogs. <br />
             <span
               className={`text-gray-50 cursor-pointer font-Mono`}
               onClick={redirect}

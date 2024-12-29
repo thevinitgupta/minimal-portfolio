@@ -1,4 +1,4 @@
-import { TbBrandReact,TbDatabase, TbApi, TbDeviceMobileCode, TbBrandJavascript, TbDeviceDesktopCode, TbBrandHtml5, TbBrandCss3, TbBrandGithub, TbBrandGraphql, TbBrandFirebase, TbBrandMongodb, TbBrandFlutter, TbBrandNextjs, TbBrandTailwind, TbSql } from 'react-icons/tb'
+import { TbBrandReact,TbDatabase, TbApi, TbDeviceMobileCode, TbBrandJavascript, TbDeviceDesktopCode, TbBrandHtml5, TbBrandCss3, TbBrandGithub, TbBrandGraphql, TbBrandFirebase, TbBrandMongodb, TbBrandFlutter, TbBrandNextjs, TbBrandTailwind } from 'react-icons/tb'
 import { IoLogoNodejs } from 'react-icons/io'
 import { SiSolidity, SiEthereum, SiLeetcode, SiPexels, SiThemoviedatabase, SiAppwrite, SiSpringboot } from 'react-icons/si'
 import { FaVuejs, FaJava, FaChartLine } from 'react-icons/fa'
@@ -41,9 +41,6 @@ export default function Card(data) {
         "leetcode" : <SiLeetcode/>,
         "pexels" : <SiPexels/>,
         "tmdb" : <SiThemoviedatabase/>,
-        "springboot" : <SiSpringboot/>,
-        "oraclesql" : <TbSql/>,
-
     };
     return (
         <div className="overflow-hidden max-w-full md:max-w-[70vw] lg:max-w-full relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 hover:cursor-pointer">

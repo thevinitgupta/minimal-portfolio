@@ -3,7 +3,7 @@
         {
             "id" : "exp1",
             "title" : "Software Developer - TCS",
-            "description" : "Built the Advocate Portal to speed up insurance claim data collection, reducing processing time and improving customer satisfaction by 15%; enhanced database efficiency by 20% and reduced errors by 15%; optimized file uploads to save 40% of users' form-fill time; processed uploaded files with validations and optimizations for seamless uploads and downloads; automated tasks using SQL stored procedures across multiple tables; developed with Spring Boot, JDBC, ReactJS, OracleSQL, MySQL, and the JXL library for Excel uploads; maintained clean code with SonarQube, resolved website issues, improved the UI, and optimized data fetching for 25% faster query response."            ,
+            "description" : ``,
             "date" : "Oct 2023 - Present",
             "url" : "",
             "tech" : ["springboot", "reactjs","oraclesql", "java" ],

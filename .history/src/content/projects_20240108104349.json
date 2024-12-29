@@ -2,15 +2,6 @@
     "featured" : [
         {
             "id" : "feat1",
-            "title" : "Biblio",
-            "description" : "Your go-to platform for book reviews and authentication, featuring rich editing with image support. Powered by React, Spring Boot, and MongoDB, with secure image storage via Appwrite. I proudly contribute to this innovative project!",
-            "tags" : ["nextjs", "springboot", "mongodb", "tailwindcss", "opensource"],
-            "url" : "",
-            "slug" : "biblio",
-            "date" : "Work in progress"
-        },
-        {
-            "id" : "feat2",
             "title" : "Pigshell",
             "description" : "Pigshell is an innovative image/video filter app powered by React, Javascript, and CSS. Experience the magic of converting images and live videos into captivating pixel-based media using Canvas functions. With user accounts and secure authentication via Firebase, Firestore, and Redux, users can seamlessly access their media from multiple devices, ensuring a personalized and connected creative experience.",
             "tags" : ["reactjs", "firebase", "webdev"],
@@ -19,20 +10,37 @@
             "date" : "Aug 2022"
         },
         {
-            "id" : "feat3",
+            "id" : "feat2",
             "title" : "Typr Next",
             "description" : "Typr Next: Bored of the old way of practicing typing with Random Words, this is the next Generation Typing Practice Website for everyone. Practice with real paragraphs and jokes.",
             "tags" : ["nextjs", "tailwindcss", "appwrite", "charts"],
             "url" : "",
             "slug" : "Typr-Next",
             "date" : "September 2023"
-        }
-        
-    ],
-    "projects" : [
+        },
         
         {
+            "id" : "feat3",
+            "title" : "Noteslify",
+            "description" : "Your Privacy-Friendly, Open Source Alternative to EverNote. Safely store notes, files, and more. Organize, back up, and share effortlessly. I contribute to this cutting-edge project!",
+            "tags" : ["nodejs","nextjs", "tailwindcss", "opensource"],
+            "url" : "",
+            "slug" : "noteslify",
+            "date" : "Feb 2023"
+        }
+    ],
+    "projects" : [
+        {
             "id" : "proj1",
+            "title" : "HypeDB",
+            "description" : "HypeDB: A powerful NoSQL database built with NodeJS, Streams, and File Compression for high-performance data handling. Features secure fields, schema design, and NodeJS database driver.",
+            "tags" : ["nodejs","compression", "database"],
+            "url" : "",
+            "slug" : "HypeDB",
+            "date" : "May 2023"
+        },
+        {
+            "id" : "proj12",
             "title" : "MovieFling",
             "description" : "MovieFling: A React-based app for effortless movie and TV series discovery. Access vast TMDB data with custom pages for each title. Unique feature: Find watch providers based on your country for seamless streaming.",
             "tags" : ["reactjs", "css", "tmdb", "webdev"],
