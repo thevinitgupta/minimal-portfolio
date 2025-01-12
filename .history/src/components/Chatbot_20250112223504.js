@@ -103,10 +103,10 @@ const Chatbot = ({toggleChat}) => {
         />
       {/* {isOpen && ( */}
       <div ref={chatRef} className={`fixed bottom-10 right-0 md:right-10 backdrop-blur  duration-200 border-b  bg-zinc-900/500 border border-zinc-600 p-4 rounded-lg shadow-md z-70 font-Mono`}>
-        <button onClick={()=>{toggleChat()}} className={` absolute -top-5 right-0 md:-right-5 z-10 text-red-500 p-2  font-mono`}>
+        <button onClick={()=>{toggleChat()}} className={` absolute  -top-5 -right-5 z-10 text-red-500 p-2  font-mono`}>
           <FaWindowClose size={28} />
           </button>
-          <div className='flex flex-col gap-2 w-[80vw] md:w-[23rem] h-96 overflow-y-auto snap-y'>
+          <div className='flex flex-col gap-2 w-[23rem] h-96 overflow-y-auto snap-y'>
             {/* Render chat history */}
             {chatHistory.map((message,index) => (
               <div key={message.role+index} className={`text-xl ${message.role === 'user' ? 'text-fuchsia-500' : 'text-cyan-300'} snap-end`}>

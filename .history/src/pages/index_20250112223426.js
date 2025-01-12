@@ -99,7 +99,7 @@ export default function Home() {
         </div>
         {isOpen ? <Chatbot toggleChat={toggleChat} geminiApiKey={GEMINI_API_KEY}/> : null}
         <section
-          className={`w-full h-auto mb-10 flex items-center justify-center gap-4 md:gap-8 text-sm md:text-md lg:text-[1.5rem] font-Mono text-gray-500 z-5`}
+          className={`w-full h-auto mb-10 flex items-center justify-center md:gap-8 text-sm md:text-md lg:text-[1.5rem] font-Mono text-gray-500 z-5`}
         >
           <Link
             href={`/projects`}
