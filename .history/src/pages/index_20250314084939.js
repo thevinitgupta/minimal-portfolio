@@ -2,6 +2,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Blob from "@/components/blob";
 import { useRef } from "react";
 import { useEffect,useState } from "react";
 import Chatbot from "@/components/Chatbot";

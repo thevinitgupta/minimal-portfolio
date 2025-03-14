@@ -1,4 +1,4 @@
-
+import Blob from '@/components/blob'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {

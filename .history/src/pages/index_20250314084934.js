@@ -2,10 +2,10 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Blob from "@/components/blob";
 import { useRef } from "react";
 import { useEffect,useState } from "react";
 import Chatbot from "@/components/Chatbot";
-import ViewCounter from "@/components/ViewCount";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,7 +74,7 @@ export default function Home() {
 
   return (
     <div>
-      <ViewCounter/>
+      
       <Head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
         <title>Vinit Gupta - Software Developer | Portfolio</title>
