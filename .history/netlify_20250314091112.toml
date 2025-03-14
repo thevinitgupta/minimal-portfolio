@@ -1,0 +1,2 @@
+[functions]
+  timeout = 20 # Increase function timeout to 20 seconds
