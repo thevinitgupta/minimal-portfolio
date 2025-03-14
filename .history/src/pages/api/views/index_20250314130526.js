@@ -1,7 +1,5 @@
-
 import { NextRequest, NextResponse } from "next/server";
 import { redis } from "@/helpers/redis";
-import {createHash} from "node:crypto"
 
 export default async function handler(req, res) {
     if (req.method === "POST") {
@@ -17,7 +15,7 @@ export default async function handler(req, res) {
             return res.status(400).json({ error: "Unable to determine IP address" });
         }
 
-        const hash = createHash("sha256").update(ip).digest("hex");
+        const hash =  createHash("sha256").update(ip).digest("hex");
 
         // Check if the IP has already been counted in the last 24 hours
         const isNew = await redis.set(`deduplicate:${hash}`, "true", "NX", "EX", 86400);
