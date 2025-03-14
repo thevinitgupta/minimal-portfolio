@@ -45,7 +45,7 @@ export default function ViewCounter() {
         <div className="fixed top-4 right-4 bg-transparent min-w-[100px] flex gap-4 items-center 
         justify-between text-zinc-400 border hover:border-zinc-400/50 border-zinc-600 px-4 py-1 
         rounded-full shadow-lg font-semibold">
-            <PiEyeBold /> {displayedViews}
+            <PiEyesBold /> {displayedViews}
         </div>
     );
 }

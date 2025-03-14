@@ -1,6 +1,6 @@
 "use client"; // For App Router, remove for Pages Router
 import { useEffect, useState } from "react";
-import { PiEyeBold } from "react-icons/pi";
+import { PiEye } from "react-icons/pi";
 
 export default function ViewCounter() {
     const [views, setViews] = useState(0);
@@ -45,7 +45,7 @@ export default function ViewCounter() {
         <div className="fixed top-4 right-4 bg-transparent min-w-[100px] flex gap-4 items-center 
         justify-between text-zinc-400 border hover:border-zinc-400/50 border-zinc-600 px-4 py-1 
         rounded-full shadow-lg font-semibold">
-            <PiEyeBold /> {displayedViews}
+            <PiEyesBold /> {displayedViews}
         </div>
     );
 }
