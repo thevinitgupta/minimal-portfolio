@@ -58,6 +58,5 @@ export default async function handler(req, res) {
             console.error("Error fetching pageviews:", error);
             return res.status(500).json({ error: "Internal Server Error : "+error.message });
         }
-    }
     return NextResponse.error("Method not allowed", 405);
 }
