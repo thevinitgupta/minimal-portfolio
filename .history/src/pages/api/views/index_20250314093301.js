@@ -44,7 +44,6 @@ export default async function handler(req, res) {
 
         // Increment the pageview count
         await redis.incr("pageviews:site");
-        
         const pageviews = await redis.get("pageviews:site");
         console.log("redis page views : ",pageviews)
         return res.status(200).json({ pageviews: parseInt(pageviews) || 100 });
