@@ -11,8 +11,8 @@ export default function ViewCounter() {
             try {
                 const res = await fetch("/api/views");
                 const data = await res.json();
-                console.log("Views : "+data.pageviews)
-                setViews(data.pageviews || 100);
+                console.log()
+                setViews(data.views || 100);
             } catch (error) {
                 console.error("Failed to fetch views:", error);
                 setViews(100);
